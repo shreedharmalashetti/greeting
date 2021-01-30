@@ -36,7 +36,7 @@ bot.command('update',async ctx=>{
   ctx.reply('updated')
 })
 
-//bot.launch()
+bot.launch()
 /*bot.on('document',ctx=>{
   console.log(ctx.message)
 })
