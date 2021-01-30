@@ -1,5 +1,5 @@
 import { uploadPhotoId,updatePhotos,getPhotoIds,getPhotos } from './functions.js'
-import {Telegraf} from 'telegraf';
+import Telegraf from 'telegraf';
 
 
 const API_TOKEN = process.env.API_TOKEN || '1482357475:AAF9n2KgWUNwge6CI9JiH4anLfSHyPLUWRc';
