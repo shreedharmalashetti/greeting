@@ -6,8 +6,8 @@ const API_TOKEN = process.env.API_TOKEN || '1482357475:AAF9n2KgWUNwge6CI9JiH4anL
 const PORT = process.env.PORT || 5000;
 const URL = process.env.URL || 'https://hellogreeting.herokuapp.com';
 const bot = new Telegraf(API_TOKEN);
-bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
-bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
+//bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
+//bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
 const chatId=647015353;
 
@@ -36,7 +36,7 @@ bot.command('update',async ctx=>{
   ctx.reply('updated')
 })
 
-//bot.launch()
+bot.launch()
 /*bot.on('document',ctx=>{
   console.log(ctx.message)
 })
