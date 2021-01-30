@@ -11,6 +11,10 @@ bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
 const chatId=647015353;
 
+bot.start(ctx=>{
+  ctx.reply("hello")
+})
+
 bot.on('photo', ctx=>{
   const name = ctx.message.from.first_name;
   const msgId = ctx.message.message_id;
@@ -49,7 +53,7 @@ bot.command('f',ctx=>{
 
  //Enable graceful stop 647015353
 
-process.once('SIGINT', () => bot.stop('SIGINT'))
-process.once('SIGTERM', () => bot.stop('SIGTERM'))
+//process.once('SIGINT', () => bot.stop('SIGINT'))
+//process.once('SIGTERM', () => bot.stop('SIGTERM'))
 
 
